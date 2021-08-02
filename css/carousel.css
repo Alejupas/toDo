@@ -1,0 +1,19 @@
+.full-image {
+    display: none;
+}
+
+.displayed {
+    display: block;
+    object-fit: cover;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.thumbnails{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95vw;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}

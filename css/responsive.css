@@ -4,17 +4,63 @@
         height: 60px;
     }
     
-    .nav-button {
+    .login-button {
         padding: 16px;
     }
+
+    section > .thumbnails{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #carousel > a > .displayed {
+        width: 90%;
+    }
+
+    nav > .nav-buttons{
+        width: 60%;
+        float: right;
+    }
+
+   .nav-buttons > .login-button {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+   .nav-buttons > input {
+        padding: 10px;
+        font-size: 13px;
+       width: 30%;
+    }
+
+    #carousel > .thumbnail {
+        height: 100px;
+    }
+
 }
 
  /* TABLET */
 @media screen and (min-width: 425px) {
-    
-
-    .nav-button {
+    .login-button {
         padding: 20px 40px;
+    }
+
+    #carousel > .thumbnails{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-buttons >  .search-input {
+        padding: 15px;
+        font-size: 16px;
+        width: 30%;
+    }
+
+    nav > .nav-buttons{
+        width: 60%;
+        float: right;
+    }
+
+    header > nav > .nav-buttons {
+        float: right;
     }
 }
 
@@ -25,7 +71,7 @@
         justify-content: space-around;
     }
 
-   .nav-buttons >  .nav-button{
+   .nav-buttons >  .login-button {
         margin-right: 50px;
         padding: 16px 35px;
         font-size: 20px ;
@@ -36,9 +82,21 @@
         font-size: 27px;
         margin-top: 15px;
     }
+
+   #carousel > .thumbnails{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* L LAPTOP and DESKTOP */
 @media screen and (min-width: 1024px) {
-   
+    #carousel > .thumbnails{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-buttons > input {
+        padding: 20px;
+        font-size: 17px;
+       min-width: 40%;
+    }
 }
