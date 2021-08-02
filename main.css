@@ -1,0 +1,46 @@
+@import url("./css/responsive.css");
+
+* {
+    margin: 0 auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+}
+
+:root {
+    --primaryColor: #FFB740;
+    --secondaryColor: #DF711B;
+    --thirdColor: #64C9CF;
+}
+
+.nav-buttons{
+    float: right;
+}
+
+nav { 
+    line-height: 78px;
+    background-color: var(--primaryColor);
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-button {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 4px var(--secondaryColor);
+    font-size: 15px;
+}
+
+.nav-button:hover {
+    background-color: var(--secondaryColor);
+    color: white;
+}
