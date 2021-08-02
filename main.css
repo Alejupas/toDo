@@ -20,6 +20,7 @@ body {
     --thirdColor: #64C9CF;
 }
 
+/* NAVIGATION */
 .nav-buttons{
     float: right;
 }
@@ -43,4 +44,12 @@ nav {
 .nav-button:hover {
     background-color: var(--secondaryColor);
     color: white;
+}
+
+/* MAIN MENU */
+
+main > h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
 }
