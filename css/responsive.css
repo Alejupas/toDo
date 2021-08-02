@@ -9,7 +9,7 @@
     }
 
     section > .thumbnails{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #carousel > a > .displayed {
@@ -32,8 +32,9 @@
        width: 30%;
     }
 
-    #carousel > .thumbnail {
+    #carousel > .thumbnails > a > .thumbnail {
         height: 100px;
+        width: 100px;
     }
 
 }
