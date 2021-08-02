@@ -33,8 +33,8 @@
     }
 
     #carousel > .thumbnails > a > .thumbnail {
-        height: 100px;
-        width: 100px;
+        height: 85px;
+        width: 85px;
     }
 
 }
@@ -56,7 +56,6 @@
     }
 
     nav > .nav-buttons{
-        width: 60%;
         float: right;
     }
 

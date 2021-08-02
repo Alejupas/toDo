@@ -7,6 +7,8 @@
     object-fit: cover;
     width: 70%;
     margin-bottom: 30px;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 15px;
 }
 
 .thumbnails{
@@ -16,4 +18,15 @@
     grid-gap: 10px;
     margin-bottom: 20px;
     object-fit: cover;
+    border-radius: 15px;
+}
+
+.thumbnail {
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px rgb(199, 199, 199);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
