@@ -37,6 +37,10 @@
         width: 85px;
     }
 
+    footer {
+        flex-basis: 35%;
+        flex-wrap: wrap;
+    }
 }
 
  /* TABLET */
@@ -62,6 +66,21 @@
     header > nav > .nav-buttons {
         float: right;
     }
+
+    footer {
+        flex-basis: 35%;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-col > h4 {
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
 }
 
 /* LAPTOP */
@@ -85,6 +104,11 @@
 
    #carousel > .thumbnails{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        flex-basis: 35%;
+        flex-wrap: wrap;
     }
 }
 

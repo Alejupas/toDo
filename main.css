@@ -5,12 +5,13 @@
     margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 body {
@@ -66,4 +67,40 @@ main > h1 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #241306;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    width: 100 vw;
+}
+
+.footer-col > h4, p{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-col > ul > li > a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.footer-col > ul > li {
+    list-style-type: none;
+}
+
+
+.footer-col > p {
+    width: 300px;
+    padding: 1px;
+}
+
+.footer-col > h4 {
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
