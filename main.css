@@ -38,6 +38,19 @@ body {
 }
 
 /* NAVIGATION */
+header {
+  position: fixed;
+  top: 0;
+  margin-bottom: 80px;
+  z-index: 11;
+  width: 100vw;
+}
+
+/* MAIN */
+main {
+  margin-top: 100px;
+}
+
 nav {
   line-height: 78px;
   background-color: var(--primaryColor);
