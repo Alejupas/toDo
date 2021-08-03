@@ -1,27 +1,22 @@
-// CAROUSEL
-const slideTrack = document.querySelector('.carousel__track')
+const counter = 0;
+const track = document.querySelector('.carousel-container')
 
-// all slides
-const slides = Array.from(slideTrack.children)
-
-console.log(slideTrack);
-console.log(slides);
+const allSlidesArr = ["https://placeimg.com/1280/720/nature", "https://placeimg.com/1280/720/animals", "https://placeimg.com/1280/720/tech"]
 
 // ARROWS
 const arrowLeft = document.querySelector('.carousel__button--left');
 const arrowRight = document.querySelector('.carousel__button--right');
 
-// SLIDES
-const firstSlide = document.querySelector('.first')
-const secondSlide = document.querySelector('.second')
-const thirdSlide = document.querySelector('.third')
-
 arrowLeft.addEventListener("click", ()=>{
-    console.log('clicked');
+    
 });
 
 arrowRight.addEventListener("click", ()=>{
     
-    firstSlide.className.add = 'display-none';
-    secondSlide.classList.remove = 'display-none'
 });
+
+
+const getFirstImage = () => {
+        track.style.backgroundImage = `url(${this.items[this.counter].image})`;
+		imageContainer.innerHTML = `<h2>${this.items[this.counter].name}</h2>`;
+}

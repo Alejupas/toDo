@@ -1,21 +1,14 @@
-/* ARROWS */
-.carousel__track-container > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.carousel-img-arrows-container {
-  list-style-type: none;
-  padding: 0;
+section#carousel {
+  width: 90%;
+  height: 30vh;
+  background-color: blue;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(141, 140, 140, 0.795);
   position: relative;
+  margin-bottom: 30px;
 }
 
-.carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
+/* ARROWS */
 .carousel__button {
   width: 33px;
   height: 33px;
@@ -25,6 +18,9 @@
   background-color: rgba(255, 255, 255, 0);
   border: none;
   z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel__button:hover {
@@ -43,22 +39,8 @@
   right: 22%;
 }
 
-/* IMAGE */
-.full-image {
-  display: none;
-}
-
-.displayed {
-  display: block;
-  object-fit: cover;
-  width: 70%;
-  margin-bottom: 30px;
-  box-shadow: 1px 2px 3px grey;
-  border-radius: 15px;
-}
-
 /* img and arrows CONTAINER */
 
-.carousel-img-arrows-container {
+#carousel {
   display: flex;
 }

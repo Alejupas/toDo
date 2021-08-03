@@ -12,23 +12,13 @@
     flex-wrap: wrap;
   }
 
-  #carousel
-    > .carousel-img-arrows-container
-    > .carousel__track-container
-    > ul
-    > li
-    > a
-    > .displayed {
-    width: 90%;
-  }
-
-  #carousel > .carousel-img-arrows-container > .carousel__button--right {
+  #carousel > .carousel__button--right {
     right: 12%;
     height: 20px;
     width: 20px;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--left {
+  #carousel > .carousel__button--left {
     left: 12%;
     height: 20px;
     width: 20px;
@@ -72,12 +62,12 @@
 /* TABLET */
 @media screen and (min-width: 425px) {
   .nav-buttons > .login-button {
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 15px;
   }
 
   .nav-buttons > .search-input {
-    padding: 15px;
+    padding: 10px;
     font-size: 16px;
     width: 30%;
   }
@@ -97,23 +87,18 @@
     padding-top: 20px;
   }
 
-  #carousel
-    > .carousel-img-arrows-container
-    > .carousel__track-container
-    > ul
-    > li
-    > a
-    > .displayed {
-    width: 90%;
+  section#carousel {
+    max-width: 80%;
+    height: 45vh !important;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--right {
+  #carousel > .carousel__button--right {
     right: 8%;
     height: 20px;
     width: 20px;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--left {
+  #carousel > .carousel__button--left {
     left: 8%;
     height: 20px;
     width: 20px;
@@ -148,14 +133,19 @@
     flex-wrap: wrap;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--right {
-    right: 8%;
+  section#carousel {
+    max-width: 70%;
+    height: 50vh !important;
+  }
+
+  #carousel > .carousel__button--right {
+    right: 5%;
     height: 30px;
     width: 30px;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--left {
-    left: 8%;
+  #carousel > .carousel__button--left {
+    left: 5%;
     height: 30px;
     width: 30px;
   }
@@ -169,19 +159,20 @@
     min-width: 40%;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--right {
+  section#carousel {
+    max-width: 70%;
+    height: 55vh !important;
+  }
+
+  #carousel > .carousel__button--right {
     right: 8%;
     height: 35px;
     width: 35px;
   }
 
-  #carousel > .carousel-img-arrows-container > .carousel__button--left {
+  #carousel > .carousel__button--left {
     left: 8%;
     height: 35px;
     width: 35px;
-  }
-
-  #carousel > .carousel-img-arrows-container {
-    width: 70%;
   }
 }

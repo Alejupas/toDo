@@ -46,6 +46,11 @@ header {
   width: 100vw;
 }
 
+/* NAV IMAGE
+.carousel__track-container > ul > li > a > img {
+  background: rgba(0, 0, 0, 0.6);
+} */
+
 /* MAIN */
 main {
   margin-top: 100px;
