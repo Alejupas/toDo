@@ -10,7 +10,7 @@
 
 .left,
 .right:hover {
-  box-shadow: -2px 2px 0 rgb(102, 101, 101);
+  box-shadow: -2px 2px 0 rgb(80, 80, 80);
 }
 
 .left {
