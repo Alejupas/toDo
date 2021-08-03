@@ -1,32 +1,55 @@
+.left,
+.right {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  float: left;
+  box-shadow: -2px 2px 0 grey;
+  cursor: pointer;
+}
+
+.left,
+.right:hover {
+  box-shadow: -2px 2px 0 rgb(102, 101, 101);
+}
+
+.left {
+  transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(225deg);
+}
+
 .full-image {
-    display: none;
+  display: none;
 }
 
 .displayed {
-    display: block;
-    object-fit: cover;
-    width: 70%;
-    margin-bottom: 30px;
-    box-shadow: 1px 2px 3px grey;
-    border-radius: 15px;
+  display: block;
+  object-fit: cover;
+  width: 70%;
+  margin-bottom: 30px;
+  box-shadow: 1px 2px 3px grey;
+  border-radius: 15px;
 }
 
-.thumbnails{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 95vw;
-    grid-gap: 10px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    border-radius: 15px;
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 95vw;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .thumbnail {
-    border-radius: 15px;
-    box-shadow: 1px 2px 3px rgb(199, 199, 199);
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px rgb(199, 199, 199);
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
