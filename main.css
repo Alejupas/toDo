@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
 }
 
-.logo-div > .logo {
+#logo > .logo {
   height: 50px;
   margin-top: 15px;
 }
@@ -31,6 +31,10 @@ body {
   --primaryColor: #ffb740;
   --secondaryColor: #df711b;
   --thirdColor: #64c9cf;
+}
+
+.display-none {
+  display: none;
 }
 
 /* NAVIGATION */
