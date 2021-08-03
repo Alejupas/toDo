@@ -44,8 +44,9 @@
 
 /* TABLET */
 @media screen and (min-width: 425px) {
-  .login-button {
-    padding: 20px 40px;
+  .nav-buttons > .login-button {
+    padding: 15px 30px;
+    font-size: 15px;
   }
 
   #carousel > .thumbnails {
