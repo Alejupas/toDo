@@ -1,126 +1,116 @@
 /* MOBILE */
 @media screen and (max-width: 425px) {
-    .logo {
-        height: 60px;
-    }
-    
-    .login-button {
-        padding: 16px;
-    }
+  .logo {
+    height: 50px;
+  }
 
-    section > .thumbnails{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .login-button {
+    padding: 16px;
+  }
 
-    #carousel > a > .displayed {
-        width: 90%;
-    }
+  section > .thumbnails {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    nav > .nav-buttons{
-        width: 60%;
-        float: right;
-    }
+  #carousel > a > .displayed {
+    width: 90%;
+  }
 
-   .nav-buttons > .login-button {
-        padding: 10px;
-        font-size: 13px;
-    }
+  nav > .nav-buttons {
+    width: 60%;
+  }
 
-   .nav-buttons > input {
-        padding: 10px;
-        font-size: 13px;
-       width: 30%;
-    }
+  .nav-buttons > .login-button {
+    padding: 10px;
+    font-size: 13px;
+  }
 
-    #carousel > .thumbnails > a > .thumbnail {
-        height: 85px;
-        width: 85px;
-    }
+  .nav-buttons > input {
+    padding: 10px;
+    font-size: 13px;
+    width: 30%;
+  }
 
-    footer {
-        flex-basis: 35%;
-        flex-wrap: wrap;
-    }
+  #carousel > .thumbnails > a > .thumbnail {
+    height: 85px;
+    width: 85px;
+  }
+
+  footer {
+    flex-basis: 35%;
+    flex-wrap: wrap;
+  }
 }
 
- /* TABLET */
+/* TABLET */
 @media screen and (min-width: 425px) {
-    .login-button {
-        padding: 20px 40px;
-    }
+  .login-button {
+    padding: 20px 40px;
+  }
 
-    #carousel > .thumbnails{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  #carousel > .thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .nav-buttons >  .search-input {
-        padding: 15px;
-        font-size: 16px;
-        width: 30%;
-    }
+  .nav-buttons > .search-input {
+    padding: 15px;
+    font-size: 16px;
+    width: 30%;
+  }
 
-    nav > .nav-buttons{
-        float: right;
-    }
+  footer {
+    flex-basis: 35%;
+    flex-wrap: wrap;
+  }
 
-    header > nav > .nav-buttons {
-        float: right;
-    }
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-    footer {
-        flex-basis: 35%;
-        flex-wrap: wrap;
-    }
-
-    h4 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .footer-col > h4 {
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
+  .footer-col > h4 {
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
 }
 
 /* LAPTOP */
 @media screen and (min-width: 768px) {
-    nav {
-        display: flex;
-        justify-content: space-around;
-    }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
 
-   .nav-buttons >  .login-button {
-        margin-right: 50px;
-        padding: 16px 35px;
-        font-size: 20px ;
-    }
-   
+  .nav-buttons > .login-button {
+    margin-right: 50px;
+    padding: 13px 35px;
+    font-size: 15px;
+  }
 
-    .menu > h1 {
-        font-size: 27px;
-        margin-top: 15px;
-    }
+  .menu > h1 {
+    font-size: 27px;
+    margin-top: 15px;
+  }
 
-   #carousel > .thumbnails{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  #carousel > .thumbnails {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    footer {
-        flex-basis: 35%;
-        flex-wrap: wrap;
-    }
+  footer {
+    flex-basis: 35%;
+    flex-wrap: wrap;
+  }
 }
 
 /* L LAPTOP and DESKTOP */
 @media screen and (min-width: 1024px) {
-    #carousel > .thumbnails{
-        grid-template-columns: repeat(4, 1fr);
-    }
+  #carousel > .thumbnails {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    .nav-buttons > input {
-        padding: 20px;
-        font-size: 17px;
-       min-width: 40%;
-    }
+  .nav-buttons > input {
+    padding: 20px;
+    font-size: 17px;
+    min-width: 40%;
+  }
 }
