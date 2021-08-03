@@ -2,6 +2,11 @@
 .carousel__track-container > ul {
   list-style-type: none;
   padding: 0;
+}
+
+.carousel-img-arrows-container {
+  list-style-type: none;
+  padding: 0;
   position: relative;
 }
 
@@ -15,26 +20,27 @@
   width: 50px;
   height: 50px;
   transition: 0.5s;
-  box-shadow: -2px 2px 0 grey;
+  box-shadow: -2px 2px 0 rgba(219, 219, 219, 0.726);
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  z-index: 10;
 }
 
 .carousel__button:hover {
-  box-shadow: -2px 2px 0 rgba(226, 226, 226, 0.623);
+  box-shadow: -2px 2px 0 rgba(255, 255, 255, 0.801);
 }
 
 .carousel__button--left {
   transform: rotate(45deg);
   position: absolute;
-  left: 20%;
+  left: 22%;
 }
 
 .carousel__button--right {
   transform: rotate(225deg);
   position: absolute;
-  right: 20%;
+  right: 22%;
 }
 
 /* IMAGE */
