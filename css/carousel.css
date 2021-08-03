@@ -6,6 +6,20 @@ section#carousel {
   box-shadow: 2px 2px 4px rgba(141, 140, 140, 0.795);
   position: relative;
   margin-bottom: 30px;
+  background: black;
+}
+
+#carousel > .carousel {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: black;
+  opacity: 0.3;
 }
 
 /* ARROWS */
