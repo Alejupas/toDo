@@ -8,8 +8,8 @@
     padding: 16px;
   }
 
-  section > .thumbnails {
-    grid-template-columns: repeat(3, 1fr);
+  aside > .thumbnails {
+    flex-wrap: wrap;
   }
 
   #carousel
@@ -49,9 +49,18 @@
     width: 30%;
   }
 
-  #carousel > .thumbnails > a > .thumbnail {
+  aside > .thumbnails > .aside > a > img {
     height: 85px;
     width: 85px;
+  }
+
+  .thumbnails > .aside > h3 {
+    font-size: 16px;
+  }
+
+  .thumbnails > .aside {
+    flex-basis: 90%;
+    margin-bottom: 20px;
   }
 
   footer {
@@ -65,10 +74,6 @@
   .nav-buttons > .login-button {
     padding: 15px 30px;
     font-size: 15px;
-  }
-
-  #carousel > .thumbnails {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-buttons > .search-input {
@@ -113,6 +118,11 @@
     height: 20px;
     width: 20px;
   }
+
+  aside > .thumbnails > .aside > a > img {
+    height: 85px;
+    width: 85px;
+  }
 }
 
 /* LAPTOP */
@@ -131,10 +141,6 @@
   .menu > h1 {
     font-size: 27px;
     margin-top: 15px;
-  }
-
-  #carousel > .thumbnails {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   footer {
@@ -157,10 +163,6 @@
 
 /* L LAPTOP and DESKTOP */
 @media screen and (min-width: 1024px) {
-  #carousel > .thumbnails {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .nav-buttons > input {
     padding: 20px;
     font-size: 17px;
@@ -177,5 +179,9 @@
     left: 14%;
     height: 35px;
     width: 35px;
+  }
+
+  #carousel > .carousel-img-arrows-container {
+    width: 70%;
   }
 }

@@ -62,24 +62,3 @@
 .carousel-img-arrows-container {
   display: flex;
 }
-
-/* THUMBNAILS - NAVIGATION  */
-.thumbnails {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 95vw;
-  grid-gap: 10px;
-  margin-bottom: 20px;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.thumbnail {
-  border-radius: 15px;
-  box-shadow: 1px 2px 3px rgb(199, 199, 199);
-}
-
-.thumbnail:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}

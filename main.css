@@ -86,6 +86,33 @@ main > h1 {
   margin-bottom: 10px;
 }
 
+/* ASIDE */
+
+.thumbnails {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.thumbnails > .aside > p,
+h3 {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thumbnails > .aside {
+  width: 20vw;
+}
+
+.thumbnail {
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px rgb(199, 199, 199);
+  display: flex;
+}
+
 /* FOOTER */
 footer {
   background-color: #241306;
