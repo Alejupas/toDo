@@ -145,14 +145,15 @@ p {
   text-align: center;
 }
 
-.footer-col > ul > li > a {
+.footer-col > .footer-links > a {
   text-decoration: none;
   color: white;
   text-align: left;
 }
 
-.footer-col > ul > li {
-  list-style-type: none;
+.footer-col > .footer-links {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-col > p {
