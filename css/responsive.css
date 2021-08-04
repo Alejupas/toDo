@@ -167,6 +167,7 @@
   section#carousel {
     max-width: 70%;
     height: 65vh !important;
+    padding-bottom: var(--spacer-4);
   }
 
   #carousel > .carousel__button--right {

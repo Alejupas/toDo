@@ -31,6 +31,10 @@ body {
   --primaryColor: #ffb740;
   --secondaryColor: #df711b;
   --thirdColor: #64c9cf;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 2rem;
+  --spacer-5: 5rem;
 }
 
 .display-none {
@@ -80,6 +84,7 @@ nav {
 .login-button:hover {
   background-color: var(--secondaryColor);
   color: white;
+  transition: 0.45s;
 }
 
 /* MAIN MENU */
@@ -87,8 +92,8 @@ nav {
 main > h1 {
   font-size: 22px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: var(--spacer-5);
+  margin-bottom: var(--spacer-4);
 }
 
 /* ASIDE */
@@ -96,7 +101,8 @@ main > h1 {
 .thumbnails {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacer-5);
+  margin-top: var(--spacer-5);
   border-radius: 15px;
 }
 
@@ -116,6 +122,11 @@ h3 {
   border-radius: 15px;
   box-shadow: 1px 2px 3px rgb(199, 199, 199);
   display: flex;
+}
+
+.thumbnail:hover {
+  transform: scale(1.04);
+  transition: 0.4s;
 }
 
 /* FOOTER */

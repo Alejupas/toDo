@@ -1,12 +1,11 @@
 section#carousel {
   width: 90%;
   height: 30vh;
-  background-color: blue;
   border-radius: 15px;
   box-shadow: 2px 2px 4px rgba(141, 140, 140, 0.795);
   position: relative;
-  margin-bottom: 30px;
-  background: black;
+  margin-bottom: var(--spacer-5);
+  margin-top: var(--spacer-5);
 }
 
 #carousel > .carousel {
@@ -44,7 +43,8 @@ section#carousel {
 }
 
 .carousel__button:hover {
-  box-shadow: -2px 2px 0 rgba(255, 255, 255, 0.801);
+  box-shadow: -2px 2px 0 rgba(255, 255, 255, 0.904);
+  transition: 0.3s;
 }
 
 .carousel__button--left {
