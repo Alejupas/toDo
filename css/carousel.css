@@ -22,6 +22,12 @@ section#carousel {
   opacity: 0.3;
 }
 
+#carousel > .carousel > .image-container > h2 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
 /* ARROWS */
 .carousel__button {
   width: 33px;

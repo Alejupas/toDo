@@ -166,7 +166,7 @@
 
   section#carousel {
     max-width: 70%;
-    height: 55vh !important;
+    height: 65vh !important;
   }
 
   #carousel > .carousel__button--right {
