@@ -57,6 +57,11 @@
     flex-basis: 35%;
     flex-wrap: wrap;
   }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 90px;
+  }
 }
 
 /* TABLET */
@@ -108,6 +113,11 @@
     height: 85px;
     width: 85px;
   }
+
+  h2 {
+    font-size: 35px;
+    margin-top: 125px;
+  }
 }
 
 /* LAPTOP */
@@ -154,6 +164,11 @@
     height: 130px;
     width: 130px;
   }
+
+  h2 {
+    font-size: 40px;
+    margin-top: 140px;
+  }
 }
 
 /* L LAPTOP and DESKTOP */
@@ -185,5 +200,10 @@
   aside > .thumbnails > .aside > a > img {
     height: 200px;
     width: 200px;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin-top: 220px;
   }
 }

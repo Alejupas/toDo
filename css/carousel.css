@@ -8,7 +8,7 @@ section#carousel {
   margin-top: var(--spacer-5);
 }
 
-#carousel > .carousel {
+.carousel {
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -18,7 +18,7 @@ section#carousel {
   border-radius: 15px;
   overflow: hidden;
   background: black;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 #carousel > .carousel > .image-container > h2 {
