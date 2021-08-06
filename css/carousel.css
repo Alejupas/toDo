@@ -64,3 +64,7 @@ section#carousel {
 #carousel {
   display: flex;
 }
+
+a {
+  text-decoration: none;
+}
