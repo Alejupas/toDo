@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "chance": "^1.1.7",
     "http-server": "^0.12.3",
     "jest": "^27.0.6"
   },
