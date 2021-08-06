@@ -173,10 +173,14 @@
 
 /* L LAPTOP and DESKTOP */
 @media screen and (min-width: 1024px) {
+  .nav-buttons {
+    width: 60%;
+  }
+
   .nav-buttons > input {
     padding: 20px;
     font-size: 17px;
-    min-width: 40%;
+    min-width: 20%;
   }
 
   section#carousel {
