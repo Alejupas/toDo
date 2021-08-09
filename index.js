@@ -52,3 +52,26 @@ const addHtml = () => {
     return;
 }
 addHtml()
+
+// THUMBNAIL _________________________________
+const thumbnails = document.querySelector('.thumbnails')
+
+function  getRandomImg () {
+  thumbnails.innerHTML = '';
+  fetch('http://localhost:3000/items')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    data.map((item)=>{
+      thumbnails.innerHTML += `
+      <div class="aside aside1">
+          <a href="#">
+              <img class="thumbnail" src="${item.img}">
+          </a>
+          <h3>${item.title}</h3>
+          <p>${item.text}</p>
+      </div> `
+    } )
+})
+}
+getRandomImg()
