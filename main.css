@@ -13,6 +13,12 @@ h4 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+h2 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
