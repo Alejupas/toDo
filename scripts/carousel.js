@@ -9,19 +9,22 @@ const crsl = {
         counter--;
         if(counter < 0) counter = items.length - 1;
         carousele.style.backgroundImage = `url("${items[counter].img}")`;
+        carousele.style.backgroundSize = 'cover';
         imageContainer.innerHTML = `<h2>${items[counter].text}</h2>`;
     },
-
+    
     next: (items) => {
         counter++;
         if(counter > items.length - 1) counter = 0;
         carousele.style.backgroundImage = `url("${items[counter].img}")`;
+        carousele.style.backgroundSize = 'cover';
         imageContainer.innerHTML = `<h2>${items[counter].text}</h2>`;
     },
-
+    
     defaultImg: (items) => {
         if(counter === 0) {
         carousele.style.backgroundImage = `url("${items[counter].img}")`;
+        carousele.style.backgroundSize = 'cover';
         imageContainer.innerHTML = `<h2>${items[counter].text}</h2>`;
         }
     }
