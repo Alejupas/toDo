@@ -2,13 +2,9 @@ import service from './scripts/service.js'
 import renderElements from './scripts/render.js'
 import crsl from './scripts/carousel.js'
 
-
 // ARROWS
 const arrowLeft = document.querySelector('.carousel__button--left');
 const arrowRight = document.querySelector('.carousel__button--right');
-
-// GET THUMBNAILS
-const thumbnails = document.querySelector('.thumbnails')
 
 let items = [];
 let itemsCarousel = [];
@@ -21,13 +17,13 @@ const setThumbnailItems = async() => {
 }
 setThumbnailItems(items)
 
-
 // CAROUSEL DYNAMIC
 const setCarouselItems = async() => {
   const getCarouselItems = await service.getCarouselItems();
   itemsCarousel = getCarouselItems;
+  crsl.defaultImg(itemsCarousel);
 }
-setCarouselItems(itemsCarousel)
+setCarouselItems();
 
 // EVENT LISTENERS
 arrowLeft.addEventListener('click', ()=> crsl.previous(itemsCarousel));
