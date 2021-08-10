@@ -33,6 +33,25 @@ body {
   margin-top: 15px;
 }
 
+.add-item {
+  display: flex;
+  justify-content: center;
+  padding: 12px var(--spacer-4);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px var(--secondaryColor);
+  font-size: 16px;
+  background-color: var(--primaryColor);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.add-item:hover {
+  background-color: var(--secondaryColor);
+  color: white;
+  transition: 0.45s;
+}
+
 :root {
   --primaryColor: #ffb740;
   --secondaryColor: #df711b;
@@ -47,6 +66,60 @@ body {
   display: none;
 }
 
+/* MODAL */
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 25;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.create-item-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  background-color: white;
+  border: 1px solid var(--secondaryColor);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 4px var(--secondaryColor);
+}
+
+.create-item-modal > input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.add-toList-btn {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px var(--secondaryColor);
+  font-size: 19px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.add-toList-btn:hover {
+  background-color: var(--secondaryColor);
+  color: white;
+  transition: 0.45s;
+}
+
 /* NAVIGATION */
 header {
   position: fixed;
@@ -56,11 +129,6 @@ header {
   width: 100vw;
   box-shadow: 1px 1px 7px 1px var(--secondaryColor);
 }
-
-/* NAV IMAGE
-.carousel__track-container > ul > li > a > img {
-  background: rgba(0, 0, 0, 0.6);
-} */
 
 /* MAIN */
 main {
@@ -83,7 +151,6 @@ nav {
   border: none;
   box-shadow: 1px 2px 4px var(--secondaryColor);
   font-size: 19px;
-  outline: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }

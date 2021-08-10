@@ -13,7 +13,7 @@ let itemsCarousel = [];
 const setThumbnailItems = async() => {
   const getThumbnailItems = await service.getThumbnailItems();
   items = getThumbnailItems;
-  renderElements(getThumbnailItems);
+  renderElements.renderThumbnails(getThumbnailItems);
 }
 setThumbnailItems(items)
 
