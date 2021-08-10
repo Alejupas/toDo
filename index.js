@@ -2,9 +2,12 @@ import service from './scripts/service.js'
 import renderElements from './scripts/render.js'
 import crsl from './scripts/carousel.js'
 
-// ARROWS
+// DOM elements
 const arrowLeft = document.querySelector('.carousel__button--left');
 const arrowRight = document.querySelector('.carousel__button--right');
+const addItemButton = document.querySelector('.add-item');
+const modalForCreate = document.getElementById('modal')
+
 
 let items = [];
 let itemsCarousel = [];
@@ -28,3 +31,8 @@ setCarouselItems();
 // EVENT LISTENERS
 arrowLeft.addEventListener('click', ()=> crsl.previous(itemsCarousel));
 arrowRight.addEventListener('click', ()=> crsl.next(itemsCarousel));
+addItemButton.addEventListener('click', ()=>{
+  modalForCreate.style.display = 'block';
+  renderElements.renderCreateItem();
+})
+modalForCreate.addEventListener('click', ()=> modalForCreate.style.display = 'none');
