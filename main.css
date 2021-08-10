@@ -1,106 +1,174 @@
 @import url("./css/responsive.css");
-@import url('./css/carousel.css');
+@import url("./css/carousel.css");
 
 * {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.logo {
-    height: 70px;
-    float: left;
+#logo > .logo {
+  height: 50px;
+  margin-top: 15px;
 }
 
 :root {
-    --primaryColor: #FFB740;
-    --secondaryColor: #DF711B;
-    --thirdColor: #64C9CF;
+  --primaryColor: #ffb740;
+  --secondaryColor: #df711b;
+  --thirdColor: #64c9cf;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 2rem;
+  --spacer-5: 5rem;
+}
+
+.display-none {
+  display: none;
 }
 
 /* NAVIGATION */
-.nav-buttons{
-    float: right;
+header {
+  position: fixed;
+  top: 0;
+  margin-bottom: 80px;
+  z-index: 11;
+  width: 100vw;
+  box-shadow: 1px 1px 7px 1px var(--secondaryColor);
 }
 
-nav { 
-    line-height: 78px;
-    background-color: var(--primaryColor);
-    height: 80px;
-    padding-left: 10px;
-    padding-right: 10px;
+/* NAV IMAGE
+.carousel__track-container > ul > li > a > img {
+  background: rgba(0, 0, 0, 0.6);
+} */
+
+/* MAIN */
+main {
+  margin-top: 100px;
 }
 
-.login-button, .search-input  {
-    padding: 12px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 1px 2px 4px var(--secondaryColor);
-    font-size: 19px;
-    outline:none;
-    cursor: pointer;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+nav {
+  line-height: 78px;
+  background-color: var(--primaryColor);
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
 }
 
-
+.login-button,
+.search-input {
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px var(--secondaryColor);
+  font-size: 19px;
+  outline: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 .login-button:hover {
-    background-color: var(--secondaryColor);
-    color: white;
+  background-color: var(--secondaryColor);
+  color: white;
+  transition: 0.45s;
 }
 
 /* MAIN MENU */
 
 main > h1 {
-    font-size: 22px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: var(--spacer-5);
+  margin-bottom: var(--spacer-4);
+}
+
+/* ASIDE */
+
+.thumbnails {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--spacer-5);
+  margin-top: var(--spacer-5);
+  border-radius: 15px;
+}
+
+.thumbnails > .aside > p,
+h3 {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thumbnails > .aside {
+  width: 20vw;
+}
+
+.thumbnail {
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px rgb(199, 199, 199);
+  display: flex;
+}
+
+.thumbnail:hover {
+  transform: scale(1.04);
+  transition: 0.4s;
 }
 
 /* FOOTER */
-footer{
-    background-color: #241306;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    width: 100 vw;
+footer {
+  background-color: #241306;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  width: 100 vw;
 }
 
-.footer-col > h4, p{
-    color: white;
-    text-decoration: none;
-    text-align: center;
+.footer-col > h4,
+p {
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
-.footer-col > ul > li > a {
-    text-decoration: none;
-    color: white;
-    text-align: left;
+.footer-col > .footer-links > a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
 }
 
-.footer-col > ul > li {
-    list-style-type: none;
+.footer-col > .footer-links {
+  display: flex;
+  flex-direction: column;
 }
-
 
 .footer-col > p {
-    width: 300px;
-    padding: 1px;
+  width: 300px;
+  padding: 1px;
 }
 
 .footer-col > h4 {
-    padding-bottom: 5px;
-    padding-top: 20px;
+  padding-bottom: 5px;
+  padding-top: 20px;
 }

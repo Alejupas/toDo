@@ -1,0 +1,12 @@
+{
+    "items": [
+      { "id": 1, "title": "Amazing spring", "text": "This is amazing spring picture find out more!", "img": "https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210316134609-01-wisdom-project-spring.jpg" },
+      { "id": 2, "title": "Chess Championship", "text": "Get the latest updates from the pro blogs.", "img": "https://www.pngkey.com/png/full/219-2191937_chess-pieces-clipart-love-chess.png" },
+      { "id": 3, "title": "Cloud engineering", "text": "Stay up to date with the latest cloud security blogs and much more.", "img": "https://static.vecteezy.com/system/resources/thumbnails/000/202/790/small/Cloud_Engineers.png" }
+    ],
+    "carouselItems": [
+      { "id": 1, "text": "Most selling products", "img": "https://placeimg.com/1280/720/nature" },
+      { "id": 2, "text": "Great animals", "img": "https://placeimg.com/1280/720/animals" },
+      { "id": 3, "text": "IT infrastructure", "img": "https://placeimg.com/1280/720/tech" }
+    ]
+  }

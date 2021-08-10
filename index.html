@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script type="module" src="./index.js" defer></script>
     <title>ToDo app</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo-div">
+            <div id="logo">
                 <img class="logo" src="./images/logo.png" alt="to do app logo">
             </div>
             <div class="nav-buttons">
@@ -23,80 +24,53 @@
     </header>
 
     <main class="menu">
-        <h1>MAIN MENU</h1>
+        <h1>MAIN MENU for ToDo</h1>
     </main>
 
     <section id="carousel">
-        <a href="#">
-            <img class="full-image displayed" src="https://placeimg.com/1280/720/nature">
+        <button class="carousel__button carousel__button--left">
+        </button>
+
+        <a href="https://www.google.com">
+            <div class="carousel">
+                <div class="image-container"></div>
+            </div>
         </a>
 
-        <div class="thumbnails">
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-
-            <a href="#">
-                <img class="thumbnail" src="https://placeimg.com/200/200/nature">
-                <img class="full-image" src="https://placeimg.com/1280/720/nature">
-            </a>
-        </div>
+        <button class="carousel__button carousel__button--right">
+        </button>
     </section>
+
+            <aside>
+                <div class="thumbnails"></div>
+            </aside>
 
     <footer>
         <div class="footer-col">
             <h4>Guide</h4>
-            <ul>
-                <li><a href="#">Values</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Strategy</a></li>
-                <li><a href="#">Todo better world</a></li>
-            </ul>
+            <div class="footer-links">
+                <a href="#">Values</a>
+                <a href="#">Mission</a>
+                <a href="#">Strategy</a>
+                <a href="#">Todo better world</a>
+            </div>
         </div>
+
         <div class="footer-col long-text">
             <h4>About us</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At corporis nisi animi, obcaecati mollitia earum
                 illo! Adipisci inventore odit dolores.</p>
         </div>
+
+
         <div class="footer-col">
             <h4>Quicklinks</h4>
-            <ul>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Service as software (SAAS)</a></li>
-                <li><a href="#">Be great</a></li>
-            </ul>
+            <div class="footer-links">
+                <a href="#">Company</a>
+                <a href="#">Partners</a>
+                <a href="#">Service as software (SAAS)</a>
+                <a href="#">Be great</a>
+            </div>
         </div>
     </footer>
 
