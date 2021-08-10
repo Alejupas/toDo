@@ -21,7 +21,6 @@ h2 {
 
 p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
 }
 
 body {
@@ -107,16 +106,60 @@ body {
   padding: 12px 24px;
   border-radius: 15px;
   border: none;
-  box-shadow: 1px 2px 4px var(--secondaryColor);
-  font-size: 19px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  box-shadow: 1px 2px 4px rgba(2, 83, 2, 0.795);
+  font-size: 17px;
+  background-color: rgba(0, 128, 0, 0.178);
 }
 
 .add-toList-btn:hover {
   background-color: var(--secondaryColor);
   color: white;
   transition: 0.45s;
+}
+.cancel-List-btn {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  background-color: grey;
+  box-shadow: 1px 2px 4px grey;
+  font-size: 17px;
+}
+
+.cancel-List-btn:hover {
+  background-color: rgb(102, 102, 102);
+  transition: 0.45s;
+}
+
+/* ITEM EDIT DELETE */
+.item-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.edit {
+  border-radius: 15px;
+  padding: 8px 20px;
+  border: none;
+  font-size: 17px;
+  box-shadow: 2px 2px 2px grey;
+  margin-left: 10px;
+}
+
+.edit:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.delete {
+  border-radius: 15px;
+  padding: 8px 15px;
+  border: none;
+  font-size: 17px;
+  background-color: rgba(228, 46, 46, 0.384);
+  box-shadow: 2px 2px 2px grey;
+}
+
+.delete:hover {
+  background-color: rgba(233, 21, 21, 0.582);
 }
 
 /* NAVIGATION */
@@ -170,17 +213,19 @@ main > h1 {
 }
 
 /* ASIDE */
-
-.thumbnails {
+aside > .thumbnails {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-basis: 33%;
+  flex-wrap: wrap;
   margin-bottom: var(--spacer-5);
   margin-top: var(--spacer-5);
   border-radius: 15px;
 }
 
-.thumbnails > .aside > p,
-h3 {
+.thumbnails > .aside > h3,
+.item-title,
+.item-text {
   text-align: center;
   color: black;
   margin-top: 10px;
@@ -189,6 +234,7 @@ h3 {
 
 .thumbnails > .aside {
   width: 20vw;
+  margin-bottom: 50px;
 }
 
 .thumbnail {
@@ -200,6 +246,15 @@ h3 {
 .thumbnail:hover {
   transform: scale(1.04);
   transition: 0.4s;
+}
+
+.thumbnails > .aside > .price {
+  color: rgb(6, 141, 6);
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */

@@ -1,12 +1,84 @@
 {
-    "items": [
-      { "id": 1, "title": "RayBen in style", "text": "New RayBen sunglasses are so much stylish and fun!", "img": "https://cdn.shopify.com/s/files/1/0490/9324/7140/products/Bondi_1303935_1200x.jpg?v=1602673214" },
-      { "id": 2, "title": "Summer with Gussi bag", "text": "Most stylish Gussi bag in the market. Check it out.", "img": "https://thumbs.dreamstime.com/b/empty-bag-sacking-isolated-white-background-empty-bag-sacking-isolated-104467903.jpg" },
-      { "id": 3, "title": "New Naik collection", "text": "They were sold out in few days! But we have some spare left.", "img": "https://m.media-amazon.com/images/I/414nzlV-wvL.jpg" }
-    ],
-    "carouselItems": [
-      { "id": 1, "text": "Summer hat", "img": "https://st3.depositphotos.com/1092937/12928/i/950/depositphotos_129288056-stock-photo-handmade-weaved-straw-pattern.jpg" },
-      { "id": 2, "text": "Leather Jacket", "img": "https://cdn.shopify.com/s/files/1/0228/0911/6708/articles/leather-1.jpg?v=1572299598" },
-      { "id": 3, "text": "Nice T-Shirt", "img": "https://previews.123rf.com/images/mangpor2004/mangpor20041804/mangpor2004180400048/99992769-wrinkled-white-cotton-fabric-textured-background-fashion-pattern-textile-design-concept-background.jpg" }
-    ]
-  }
+  "items": [
+    {
+      "id": 1,
+      "title": "RayBen in style",
+      "text": "New RayBen sunglasses are so much stylish and fun!",
+      "img": "https://cdn.shopify.com/s/files/1/0490/9324/7140/products/Bondi_1303935_1200x.jpg?v=1602673214",
+      "price": "10.99"
+    },
+    {
+      "id": 2,
+      "title": "Summer with Gussi bag",
+      "text": "Most stylish Gussi bag in the market. Check it out.",
+      "img": "https://thumbs.dreamstime.com/b/empty-bag-sacking-isolated-white-background-empty-bag-sacking-isolated-104467903.jpg",
+      "price": "99.99"
+    },
+    {
+      "id": 3,
+      "title": "New Naik collection",
+      "text": "They were sold out in few days! But we have some spare left.",
+      "img": "https://m.media-amazon.com/images/I/414nzlV-wvL.jpg",
+      "price": "20.99"
+    },
+    {
+      "title": "qwrqw",
+      "text": "qwrqwr",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "231",
+      "id": 4
+    },
+    {
+      "title": "The great thing",
+      "text": "ptojepgej p[rj g[e jpoqr[ gpojqr [pjqe",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "85",
+      "id": 5
+    },
+    {
+      "title": "rqrwq",
+      "text": "wr",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "22",
+      "id": 6
+    },
+    {
+      "title": "qr3",
+      "text": "qwrqwrqwr",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "2",
+      "id": 7
+    },
+    {
+      "title": "qwrqwrw",
+      "text": "qwrqwrqwr",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "21",
+      "id": 8
+    },
+    {
+      "title": "qwrqwr",
+      "text": "2rqr",
+      "img": "https://static.turbosquid.com/Preview/2016/08/09__21_58_26/thumbnail.png4D3229E2-EFB0-40A7-BA5E-0509331CE9B1Res200.jpg",
+      "price": "233",
+      "id": 9
+    }
+  ],
+  "carouselItems": [
+    {
+      "id": 1,
+      "text": "Summer hat",
+      "img": "https://st3.depositphotos.com/1092937/12928/i/950/depositphotos_129288056-stock-photo-handmade-weaved-straw-pattern.jpg"
+    },
+    {
+      "id": 2,
+      "text": "Leather Jacket",
+      "img": "https://cdn.shopify.com/s/files/1/0228/0911/6708/articles/leather-1.jpg?v=1572299598"
+    },
+    {
+      "id": 3,
+      "text": "Nice T-Shirt",
+      "img": "https://previews.123rf.com/images/mangpor2004/mangpor20041804/mangpor2004180400048/99992769-wrinkled-white-cotton-fabric-textured-background-fashion-pattern-textile-design-concept-background.jpg"
+    }
+  ]
+}

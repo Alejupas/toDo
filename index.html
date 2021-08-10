@@ -28,7 +28,19 @@
         <button class="add-item">Add item</button>
     </main>
 
-    <div id="modal"></div>
+    <div id="modal">
+        <div class="create-item-modal">
+            <h3>Create an item</h3>
+            <input required type="text" class="title-input" maxlength="30" placeholder="enter the title">
+            <input required type="text" class="text-input" maxlength="60" placeholder="enter text here">
+            <input required type="text" class="photoUrl-input" placeholder="paste photo URL">
+            <input required type="number" class="price-input" placeholder="set a price">
+            <div class="create-item-buttons">
+                <button class="add-toList-btn">Add item</button>
+                <button class="cancel-List-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
 
     <section id="carousel">
         <button class="carousel__button carousel__button--left">
@@ -65,7 +77,6 @@
                 illo! Adipisci inventore odit dolores.</p>
         </div>
 
-
         <div class="footer-col">
             <h4>Quicklinks</h4>
             <div class="footer-links">
@@ -76,9 +87,5 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
-
 </html>

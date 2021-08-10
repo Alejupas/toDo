@@ -66,6 +66,15 @@
   #modal > .create-item-modal {
     width: 60vw;
   }
+
+  .create-item-buttons > button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .create-item-modal > input {
+    padding: 7px;
+  }
 }
 
 /* TABLET */
@@ -126,6 +135,15 @@
   #modal > .create-item-modal {
     width: 60vw;
   }
+
+  .create-item-buttons > button {
+    font-size: 16px;
+  }
+
+  /* ATENTION FIX STACKING */
+  .item-buttons {
+    display: block;
+  }
 }
 
 /* LAPTOP */
@@ -181,6 +199,11 @@
   #modal > .create-item-modal {
     width: 60vw;
   }
+
+  .create-item-buttons > button {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* L LAPTOP and DESKTOP */
@@ -225,5 +248,10 @@
 
   #modal > .create-item-modal {
     width: 30vw;
+  }
+
+  .create-item-buttons > button {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
