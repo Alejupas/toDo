@@ -122,6 +122,10 @@
     width: 85px;
   }
 
+  aside > .thumbnails > .aside {
+    min-width: 45%;
+  }
+
   h2 {
     font-size: 35px;
     margin-top: 90px;
@@ -193,6 +197,10 @@
   .create-item-buttons > button {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  aside > .thumbnails > .aside {
+    min-width: 28%;
   }
 }
 

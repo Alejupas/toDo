@@ -33,11 +33,20 @@ setCarouselItems();
 // EVENT LISTENERS
 arrowLeft.addEventListener("click", () => crsl.previous(itemsCarousel));
 arrowRight.addEventListener("click", () => crsl.next(itemsCarousel));
+
+// MAIN MENU BUTTON TO ADD
 addItemButton.addEventListener("click", () => {
   modalForCreate.style.display = "block";
 });
+
 cancelToAdd.addEventListener(
   "click",
   () => (modalForCreate.style.display = "none")
 );
 agreeToAdd.addEventListener("click", () => itemsData.submit());
+
+function deleteItem() {
+  // service.deleteData();
+  // confirmationMdl.style.display = "none";
+  console.log("data got");
+}

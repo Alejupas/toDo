@@ -1,4 +1,4 @@
-/* MODAL */
+/*ADD ITEM MODAL */
 #modal {
   position: absolute;
   top: 0;
@@ -45,7 +45,7 @@
 }
 
 .add-toList-btn:hover {
-  background-color: var(--secondaryColor);
+  background-color: rgba(10, 107, 10, 0.801);
   color: white;
   transition: 0.45s;
 }
@@ -53,12 +53,83 @@
   padding: 12px 24px;
   border-radius: 15px;
   border: none;
-  background-color: grey;
+  background-color: rgb(170, 170, 170);
   box-shadow: 1px 2px 4px grey;
   font-size: 17px;
 }
 
 .cancel-List-btn:hover {
-  background-color: rgb(102, 102, 102);
+  background-color: rgb(134, 134, 134);
+  transition: 0.45s;
+}
+/*ADD ITEM MODAL END*/
+
+/* CONFIRMATION TO DELETE MODAL */
+#confirmation-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+  z-index: 25;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+}
+
+.confirm-to-delete-modal {
+  text-align: center;
+  margin-top: 16%;
+  width: 40vw;
+  height: 25vh;
+  background-color: white;
+  border: 1px solid var(--secondaryColor);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 4px var(--secondaryColor);
+  z-index: 30;
+}
+
+.confirm-to-delete-modal > h3,
+.confirmation-buttons {
+  margin-top: 10%;
+}
+
+.confirmation-buttons {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.yes {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(2, 83, 2, 0.795);
+  font-size: 17px;
+  background-color: rgba(0, 128, 0, 0.178);
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.yes:hover {
+  background-color: rgba(10, 107, 10, 0.801);
+  color: white;
+  transition: 0.45s;
+}
+.no {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(170, 170, 170);
+  box-shadow: 1px 2px 4px grey;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.no:hover {
+  background-color: rgb(134, 134, 134);
   transition: 0.45s;
 }

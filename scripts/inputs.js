@@ -1,24 +1,14 @@
 import renderElements from "./render.js";
+import service from "./service.js";
 
 // select from DOM
 const titleInput = document.querySelector(".title-input");
 const textInput = document.querySelector(".text-input");
 const urlInput = document.querySelector(".photoUrl-input");
 const priceInput = document.querySelector(".price-input");
+const deleteBtn = document.querySelector(".delete");
 
 let itemsArray = [];
-
-async function postData(data) {
-  const response = await fetch("http://localhost:3000/items/", {
-    method: "POST",
-    credentials: "same-origin",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-  return response.json();
-}
 
 const itemsData = {
   submit: () => {
@@ -28,10 +18,16 @@ const itemsData = {
       img: urlInput.value,
       price: priceInput.value,
     };
-    postData(item);
+    service.postData(item);
     itemsArray.push(item);
     renderElements.renderThumbnails(itemsArray);
-    console.log(item);
+  },
+  delete: async (item) => {
+    await service.deleteData(item.id);
+    itemsArray.filter(
+      (itemToDelete) => Number(itemToDelete.id) !== Number(item.id)
+    );
+    renderElements.renderThumbnails(itemsArray);
   },
 };
 
