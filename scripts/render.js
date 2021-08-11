@@ -22,23 +22,19 @@ const renderElements = {
     });
     const deleteBtnInItemArray = document.getElementsByClassName("delete");
     const editBtnInItem = document.querySelector(".edit");
+    const confirmToDeleteBtnArr = document.getElementsByClassName("yes");
 
     for (let i = 0; i < deleteBtnInItemArray.length; i++) {
-      deleteBtnInItemArray[i].addEventListener("click", () => {
-        confirmationMdl.style.display = "block";
-        const confirmToDeleteBtnArr = document.getElementsByClassName("yes");
-        confirmToDeleteBtnArr[i].addEventListener("click", () => {
-          service.deleteData();
-          confirmationMdl.style.display = "none";
-          console.log(confirmToDeleteBtnArr[i]);
-        });
-      });
+      deleteBtnInItemArray[i].addEventListener(
+        "click",
+        () => (confirmationMdl.style.display = "block")
+      );
       const declineToDeleteBtn = document.querySelector(".no");
       declineToDeleteBtn.addEventListener(
         "click",
         () => (confirmationMdl.style.display = "none")
       );
-      // console.log(confirmToDeleteBtnArr[i]);
+      console.log(confirmToDeleteBtnArr[i]);
       // confirmToDeleteBtnArr[i].addEventListener("click", () => {
       //   service.deleteData();
       //   confirmationMdl.style.display = "none";
