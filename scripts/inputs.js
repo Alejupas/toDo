@@ -6,7 +6,6 @@ const titleInput = document.querySelector(".title-input");
 const textInput = document.querySelector(".text-input");
 const urlInput = document.querySelector(".photoUrl-input");
 const priceInput = document.querySelector(".price-input");
-const deleteBtn = document.querySelector(".delete");
 
 let itemsArray = [];
 

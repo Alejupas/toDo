@@ -7,39 +7,40 @@ const renderElements = {
   renderThumbnails: (items) => {
     items.map((item) => {
       thumbnails.innerHTML += `
-                <div class="aside">
-                  <a href="#">
-                    <img class="thumbnail" src="${item.img}">
-                  </a>
-                  <h3 class="item-title">${item.title}</h3>
-                  <p class="item-text">${item.text}</p>
+      <div class="aside">
+      <a href="#">
+      <img class="thumbnail" src="${item.img}">
+      </a>
+      <h3 class="item-title">${item.title}</h3>
+      <p class="item-text">${item.text}</p>
                   <p class="price">$${item.price}</p>
                   <div class="item-buttons">
-                      <button class="edit">Edit</button>
-                      <button class="delete">Delete</button>
+                  <button class="edit">Edit</button>
+                  <button class="delete">Delete</button>
                   </div>
-                </div> `;
+                  </div> `;
     });
-    const deleteBtnInItemArray = document.getElementsByClassName("delete");
     const editBtnInItem = document.querySelector(".edit");
-    const confirmToDeleteBtnArr = document.getElementsByClassName("yes");
 
-    for (let i = 0; i < deleteBtnInItemArray.length; i++) {
-      deleteBtnInItemArray[i].addEventListener(
-        "click",
-        () => (confirmationMdl.style.display = "block")
-      );
-      const declineToDeleteBtn = document.querySelector(".no");
-      declineToDeleteBtn.addEventListener(
-        "click",
-        () => (confirmationMdl.style.display = "none")
-      );
-      console.log(confirmToDeleteBtnArr[i]);
-      // confirmToDeleteBtnArr[i].addEventListener("click", () => {
-      //   service.deleteData();
-      //   confirmationMdl.style.display = "none";
-      // });
-    }
+    const deleteBtnInItemArray = document.querySelectorAll(".delete");
+
+    deleteBtnInItemArray.forEach((item, i) => {
+      item.addEventListener("click", () => {
+        const declineToDeleteBtn = document.querySelector(".no");
+        declineToDeleteBtn.addEventListener(
+          "click",
+          () => (confirmationMdl.style.display = "none")
+        );
+
+        const confirmToDeleteBtnArr = document.querySelectorAll(".yes");
+        console.log(confirmToDeleteBtnArr);
+        confirmToDeleteBtnArr.addEventListener("click", () => {
+          service.deleteData(item.id);
+          confirmationMdl.style.display = "none";
+        });
+        confirmationMdl.style.display = "block";
+      });
+    });
   },
 };
 
