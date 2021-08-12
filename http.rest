@@ -1,0 +1,7 @@
+DELETE http://localhost:3000/items/7
+content-type: application/json
+
+# {
+#     "name": "naujas",
+#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+# }
