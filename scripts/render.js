@@ -19,9 +19,9 @@ const renderElements = {
                   <button class="delete">Delete</button>
                   </div>
                   </div> `;
+      console.log(item.id);
     });
     const editBtnInItem = document.querySelector(".edit");
-
     const deleteBtnInItemArray = document.querySelectorAll(".delete");
 
     deleteBtnInItemArray.forEach((item, i) => {
@@ -32,10 +32,14 @@ const renderElements = {
           () => (confirmationMdl.style.display = "none")
         );
 
-        const confirmToDeleteBtnArr = document.querySelectorAll(".yes");
-        console.log(confirmToDeleteBtnArr);
-        confirmToDeleteBtnArr.addEventListener("click", () => {
-          service.deleteData(item.id);
+        const confirmToDeleteButton = document.getElementById("yes");
+        console.log(confirmToDeleteButton);
+
+        confirmToDeleteButton.addEventListener("click", (e) => {
+          service.deleteData(items.id);
+          console.log(items.id);
+          console.log(e.target.id);
+          // console.log(items[i]);
           confirmationMdl.style.display = "none";
         });
         confirmationMdl.style.display = "block";

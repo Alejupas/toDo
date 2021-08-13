@@ -26,6 +26,7 @@ nav {
   font-size: 19px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
 }
 
 .login-button:hover {

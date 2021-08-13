@@ -16,13 +16,14 @@ const itemsData = {
       text: textInput.value,
       img: urlInput.value,
       price: priceInput.value,
+      id: id,
     };
     service.postData(item);
     itemsArray.push(item);
     renderElements.renderThumbnails(itemsArray);
   },
-  delete: async (item) => {
-    await service.deleteData(item.id);
+  delete: (item) => {
+    service.deleteData(item.id);
     itemsArray.filter(
       (itemToDelete) => Number(itemToDelete.id) !== Number(item.id)
     );
