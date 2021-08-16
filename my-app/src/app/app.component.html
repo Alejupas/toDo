@@ -1,5 +1,9 @@
 <app-header> </app-header>
 <app-main></app-main>
-<app-carousel></app-carousel>
-<app-thumbnails></app-thumbnails>
+<router-outlet></router-outlet>
+<!-- Router view goes here -->
+<div>
+  <a routerLink="/carousel" routerLinkAcitve="active">Carousel </a>
+  <a routerLink="/thumbnails" routerLinkAcitve="active">Thumbnails</a>
+</div>
 <app-footer></app-footer>
