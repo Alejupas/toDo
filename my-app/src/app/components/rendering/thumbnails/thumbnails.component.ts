@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeroService } from 'src/app/service/hero.service';
+
 
 @Component({
   selector: 'app-thumbnails',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thumbnails.component.scss']
 })
 export class ThumbnailsComponent implements OnInit {
-
-  constructor() { }
+  thumbnailsItems: any;
+  constructor(private heroService:HeroService) { }
 
   ngOnInit(): void {
+    this.getThumbnailsItems();
+  }
+
+  getThumbnailsItems(){
+    this.heroService.getAllItemsData().subscribe(thumbnailsItems => {
+      this.thumbnailsItems = thumbnailsItems;
+      console.log(thumbnailsItems);
+      
+    })
   }
 
 }

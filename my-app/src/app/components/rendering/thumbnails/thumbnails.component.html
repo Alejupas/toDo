@@ -1,4 +1,16 @@
 <aside>
-  <div class="thumbnails"></div>
-  <p>Thumbnails list works</p>
+  <div class="thumbnails" *ngFor="let item of thumbnailsItems">
+    <div class="aside">
+      <a href="#">
+        <img class="thumbnail" src="{{ item.img }}" />
+      </a>
+      <h3 class="item-title">{{ item.title }}</h3>
+      <p class="item-text">{{ item.text }}</p>
+      <p class="price">{{ item.price }}</p>
+      <div class="item-buttons">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+  </div>
 </aside>

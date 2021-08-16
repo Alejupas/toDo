@@ -14,7 +14,7 @@ export class HeroService {
     return this.http.get(this.ROOT_URL + '/carouselItems')
   }
   
-  getAllItemsData(){
+  getAllItemsData(): Observable<{}>{
     return this.http.get(this.ROOT_URL + '/items')
   }
 
@@ -22,7 +22,3 @@ export class HeroService {
   //   this.posts = this.http.delete(this.ROOT_URL + `/items/${id}`)
   // }
 }
-
-// db address - localhost.. 
-// call from component constructor service 
-// fn getItems , which should call service fn
