@@ -1,0 +1,49 @@
+.create-item-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  background-color: white;
+  padding: 20px;
+  height: 40vh;
+  width: 40vw;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.create-item-modal > input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.add-toList-btn {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(2, 83, 2, 0.795);
+  font-size: 17px;
+  background-color: rgba(0, 128, 0, 0.178);
+}
+
+.add-toList-btn:hover {
+  background-color: rgba(10, 107, 10, 0.801);
+  color: white;
+  transition: 0.45s;
+}
+.cancel-List-btn {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(170, 170, 170);
+  box-shadow: 1px 2px 4px grey;
+  font-size: 17px;
+}
+
+.cancel-List-btn:hover {
+  background-color: rgb(134, 134, 134);
+  transition: 0.45s;
+}

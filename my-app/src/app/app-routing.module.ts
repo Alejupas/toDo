@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CarouselComponent } from './components/rendering/carousel/carousel.component';
-import { ThumbnailsComponent } from './components/rendering/thumbnails/thumbnails.component';
-
+import { MainComponent } from './components/main/main.component';
+import { CreateComponent } from './components/rendering/create/create.component'
 
 const routes: Routes = [
-  {path: 'carousel', component: CarouselComponent},
-  {path: 'thumbnails', component: ThumbnailsComponent}
+  {path: '', component: MainComponent},
+  {path: 'create', component: CreateComponent}
 ];
 
 @NgModule({
@@ -14,5 +13,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-export const routingComponents = [CarouselComponent, ThumbnailsComponent]

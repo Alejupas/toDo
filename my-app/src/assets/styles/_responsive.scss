@@ -58,13 +58,22 @@
     margin-top: 40px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 60vw;
+  }
+
+  .create-item-buttons {
+    text-align: center;
+  }
+
+  .create-item-buttons > .add-toList-btn {
+    margin-bottom: 10px;
   }
 
   .create-item-buttons > button {
     font-size: 14px;
     padding: 10px 20px;
+    min-width: 60%;
   }
 
   .create-item-modal > input {
@@ -131,12 +140,21 @@
     margin-top: 90px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 60vw;
+  }
+
+  .create-item-buttons {
+    text-align: center;
   }
 
   .create-item-buttons > button {
     font-size: 16px;
+    min-width: 60%;
+  }
+
+  .create-item-buttons > .add-toList-btn {
+    margin-bottom: 20px;
   }
 }
 
@@ -190,7 +208,7 @@
     margin-top: 110px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 60vw;
   }
 
@@ -244,7 +262,7 @@
     margin-top: 150px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 30vw;
   }
 
