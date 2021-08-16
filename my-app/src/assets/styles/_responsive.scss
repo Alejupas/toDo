@@ -59,7 +59,7 @@
   }
 
   .create-item-modal {
-    width: 60vw;
+    width: 80vw;
   }
 
   .create-item-buttons {
@@ -73,11 +73,13 @@
   .create-item-buttons > button {
     font-size: 14px;
     padding: 10px 20px;
-    min-width: 60%;
+    min-width: 50vw;
   }
 
   .create-item-modal > input {
     padding: 7px;
+    min-width: 50vw;
+    margin: 0 auto;
   }
 }
 

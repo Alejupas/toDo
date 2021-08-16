@@ -9,19 +9,19 @@ main > h1 {
   margin-bottom: var(--spacer-4);
 }
 
-.add-item {
-  display: flex;
-  justify-content: center;
-  padding: 12px var(--spacer-4);
-  border-radius: 15px;
-  border: none;
-  box-shadow: 1px 2px 4px var(--secondaryColor);
-  font-size: 16px;
-  cursor: pointer;
-  background-color: var(--primaryColor);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+// .add-item {
+//   display: flex;
+//   justify-content: center;
+//   padding: 12px var(--spacer-4);
+//   border-radius: 15px;
+//   border: none;
+//   box-shadow: 1px 2px 4px var(--secondaryColor);
+//   font-size: 16px;
+//   cursor: pointer;
+//   background-color: var(--primaryColor);
+//   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+//     "Lucida Sans", Arial, sans-serif;
+// }
 
 .add-item:hover {
   background-color: var(--secondaryColor);
