@@ -10,6 +10,11 @@ Nav > a {
   padding: 10px 30px;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+Nav {
+  max-width: 50vw;
 }
 
 Nav > a:hover {

@@ -1,0 +1,57 @@
+#confirmation-modal {
+  height: 50vh;
+}
+
+.confirm-to-delete-modal {
+  text-align: center;
+  margin-top: 8%;
+  height: 25vh;
+  width: 40vw;
+  padding: 20px;
+  z-index: 30;
+}
+
+.confirm-to-delete-modal > h3,
+.confirmation-buttons {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.confirmation-buttons {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.yes {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 2px 4px rgba(2, 83, 2, 0.795);
+  font-size: 17px;
+  background-color: rgba(0, 128, 0, 0.178);
+  margin-bottom: 7px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.yes:hover {
+  background-color: rgba(10, 107, 10, 0.801);
+  color: white;
+  transition: 0.45s;
+}
+.no {
+  padding: 12px 24px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(170, 170, 170);
+  box-shadow: 1px 2px 4px grey;
+  font-size: 17px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.no:hover {
+  background-color: rgb(134, 134, 134);
+  transition: 0.45s;
+}

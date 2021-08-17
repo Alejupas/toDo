@@ -18,9 +18,6 @@ export class ThumbnailsComponent implements OnInit {
   getThumbnailsItems(){
     this.heroService.getAllItemsData().subscribe(thumbnailsItems => {
       this.thumbnailsItems = thumbnailsItems;
-      console.log(thumbnailsItems);
-      
     })
   }
-
 }

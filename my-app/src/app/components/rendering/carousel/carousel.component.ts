@@ -18,7 +18,6 @@ export class CarouselComponent implements OnInit {
   getCarouselItems(): void {
     this.heroservice.getCarouselData().subscribe(carouselItems => {
       this.carouselItems = carouselItems
-      console.log(carouselItems);
     })
   }
 }

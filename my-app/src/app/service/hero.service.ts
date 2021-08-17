@@ -18,7 +18,23 @@ export class HeroService {
     return this.http.get(this.ROOT_URL + '/items')
   }
 
-  // deleteItems(){
-  //   this.posts = this.http.delete(this.ROOT_URL + `/items/${id}`)
+  deleteItem(id:number): Observable<{}>{
+    return this.http.delete(this.ROOT_URL + `/items/${id}`)
+  }
+
+  // updateItems(id: string){
+  //   patch(this.ROOT_URL + `/items/${id}`: string, body: any | null, options?: {
+  //     headers?: HttpHeaders | {
+  //         [header: string]: string | string[];
+  //     };
+  //     context?: HttpContext;
+  //     observe?: 'body';
+  //     params?: HttpParams | {
+  //         [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
+  //     };
+  //     reportProgress?: boolean;
+  //     responseType?: 'json';
+  //     withCredentials?: boolean;
+  // }): Observable<Object>;
   // }
 }

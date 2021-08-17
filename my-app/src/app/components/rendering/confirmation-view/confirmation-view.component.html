@@ -1,0 +1,14 @@
+<div
+  id="confirmation-modal"
+  *ngFor="let item of confirmationWindow; let i = index"
+>
+  <div class="confirm-to-delete-modal">
+    <h3>Are you sure to delete?</h3>
+    <div class="confirmation-button">
+      <button class="yes">
+        <a href="/" (click)="deleteOneItem(i)">Yes</a>
+      </button>
+      <button class="no"><a href="/">No</a></button>
+    </div>
+  </div>
+</div>

@@ -29,6 +29,10 @@ nav {
   cursor: pointer;
 }
 
+.login-button {
+  margin-left: 20px;
+}
+
 .login-button:hover {
   background-color: var(--secondaryColor);
   color: white;
