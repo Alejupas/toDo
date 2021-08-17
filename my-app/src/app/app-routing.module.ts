@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
-import { CarouselComponent } from './components/rendering/carousel/carousel.component';
 import { CreateComponent } from './components/rendering/create/create.component'
 import { AllitemsComponent } from './components/allitems/allitems.component';
 import { EditComponent } from './components/edit/edit.component';
@@ -9,7 +8,6 @@ import { EditComponent } from './components/edit/edit.component';
 const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'create', component: CreateComponent},
-  {path: 'home', component: CarouselComponent },
   {path: 'edit', component: EditComponent },
   {path: 'allItems', component: AllitemsComponent }
 ];

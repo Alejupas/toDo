@@ -5,7 +5,6 @@ header {
   margin-bottom: 80px;
   z-index: 11;
   width: 100vw;
-  box-shadow: 1px 1px 7px 1px var(--secondaryColor);
 }
 
 nav {
@@ -15,6 +14,11 @@ nav {
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
+  box-shadow: 1px 1px 7px 1px var(--secondaryColor);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 40;
 }
 
 .login-button,

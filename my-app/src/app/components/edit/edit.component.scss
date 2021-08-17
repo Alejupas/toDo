@@ -1,7 +1,6 @@
 h1 {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 5%;
 }
 
 .editNavigation {
@@ -17,6 +16,8 @@ h1 {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .delete {
@@ -44,4 +45,25 @@ h1 {
 .cancel:hover {
   background-color: rgba(134, 133, 133, 0.637);
   transition: 0.45s;
+}
+
+.edit-item-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  background-color: white;
+  padding: 20px;
+  width: 40vw;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+.edit-item-modal > input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid grey;
+  outline: none;
 }
