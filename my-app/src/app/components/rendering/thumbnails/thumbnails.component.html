@@ -9,8 +9,7 @@
       <p class="price">{{ item.price }}</p>
       <div class="item-buttons">
         <!-- Routing goes here -->
-        <button class="edit">Edit</button>
-        <button class="delete"><a href="/confirmation">Delete</a></button>
+        <a class="edit" id="{{ item.id }}" href="/edit">Edit{{ item.id }}</a>
         <router-outlet></router-outlet>
       </div>
     </div>

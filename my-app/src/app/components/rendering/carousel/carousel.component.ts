@@ -11,7 +11,7 @@ import { HeroService } from 'src/app/service/hero.service';
 export class CarouselComponent implements OnInit {
   carouselItems: any;
   constructor(private heroservice: HeroService) { }
-
+  
   ngOnInit(): void {
     this.getCarouselItems()
   }

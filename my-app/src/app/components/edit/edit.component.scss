@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.editNavigation {
+  display: flex;
+  margin: 40px 0;
+}
+
+.editNavigation > a {
+  padding: 15px 35px;
+  border-radius: 15px;
+  box-shadow: 2px 3px 3px grey;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: rgba(236, 106, 106, 0.411);
+}
+
+.delete:hover {
+  background-color: rgba(209, 29, 29, 0.527);
+  transition: 0.45s;
+}

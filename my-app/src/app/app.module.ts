@@ -10,8 +10,8 @@ import { MainComponent } from './components/main/main.component';
 import { CreateComponent } from './components/rendering/create/create.component';
 import { CarouselComponent } from './components/rendering/carousel/carousel.component';
 import { ThumbnailsComponent } from './components/rendering/thumbnails/thumbnails.component';
-import { ConfirmationViewComponent } from './components/rendering/confirmation-view/confirmation-view.component';
 import { AllitemsComponent } from './components/allitems/allitems.component';
+import { EditComponent } from './components/edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +21,8 @@ import { AllitemsComponent } from './components/allitems/allitems.component';
     CarouselComponent,
     ThumbnailsComponent,
     CreateComponent,
-    ConfirmationViewComponent,
-    AllitemsComponent
+    AllitemsComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
