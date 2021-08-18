@@ -1,0 +1,25 @@
+<h1>Item Control Center</h1>
+<div class="edit-item-modal" *ngIf="item">
+  <input
+    required
+    type="text"
+    class="title-input"
+    maxlength="60"
+    value="{{ item.title }}"
+  />
+  <input
+    required
+    type="text"
+    class="text-input"
+    maxlength="60"
+    value="{{ item.text }}"
+  />
+  <input required type="text" class="photoUrl-input" value="{{ item.img }}" />
+  <input required type="number" class="price-input" value="{{ item.price }}" />
+
+  <div class="editNavigation">
+    <a routerLink="/" (click)="onDelete(item.id)" class="delete">Delete</a>
+    <a routerLink="/" class="save">Save</a>
+    <a routerLink="/" class="cancel">Cancel</a>
+  </div>
+</div>

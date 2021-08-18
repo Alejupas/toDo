@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from 'src/app/service/hero.service';
 
-
 @Component({
   selector: 'app-thumbnails',
   templateUrl: './thumbnails.component.html',

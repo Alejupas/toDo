@@ -11,7 +11,7 @@ import { CreateComponent } from './components/rendering/create/create.component'
 import { CarouselComponent } from './components/rendering/carousel/carousel.component';
 import { ThumbnailsComponent } from './components/rendering/thumbnails/thumbnails.component';
 import { AllitemsComponent } from './components/allitems/allitems.component';
-import { EditComponent } from './components/edit/edit.component';
+import { EditComponent } from './components/rendering/edit/edit.component';
 @NgModule({
   declarations: [
     AppComponent,
