@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroService } from 'src/app/service/hero.service';
+import { Server } from 'src/app/service/server.service';
 
 @Component({
   selector: 'app-thumbnails',
@@ -8,14 +8,14 @@ import { HeroService } from 'src/app/service/hero.service';
 })
 export class ThumbnailsComponent implements OnInit {
   thumbnailsItems: any;
-  constructor(private heroService:HeroService) { }
+  constructor(private server:Server) { }
 
   ngOnInit(): void {
     this.getThumbnailsItems();
   }
 
   getThumbnailsItems(){
-    this.heroService.getAllItemsData().subscribe(thumbnailsItems => {
+    this.server.getAllItemsData().subscribe(thumbnailsItems => {
       this.thumbnailsItems = thumbnailsItems;
     })
   }

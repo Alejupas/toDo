@@ -1,6 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { HeroService } from 'src/app/service/hero.service';
-import { string } from 'yargs';
+import { Server } from 'src/app/service/server.service';
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
@@ -14,7 +13,7 @@ export class CreateComponent implements OnInit {
   price: number | any;
 
 
-  constructor(private heroService: HeroService) { }
+  constructor(private server: Server) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +25,6 @@ export class CreateComponent implements OnInit {
       img: this.img,
       price: this.price
     }
-    this.heroService.postItem(newItem);
+    this.server.postItem(newItem);
   }
 }

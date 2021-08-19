@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroService } from 'src/app/service/hero.service';
+import { Server } from 'src/app/service/server.service';
 
 @Component({
   selector: 'app-carousel',
@@ -10,14 +10,14 @@ import { HeroService } from 'src/app/service/hero.service';
 
 export class CarouselComponent implements OnInit {
   carouselItems: any;
-  constructor(private heroservice: HeroService) { }
+  constructor(private server: Server) { }
   
   ngOnInit(): void {
     this.getCarouselItems()
   }
   getCarouselItems(): void {
-    this.heroservice.getCarouselData().subscribe(carouselItems => {
-      this.carouselItems = carouselItems
+    this.server.getCarouselData().subscribe(carouselItems => {
+      this.carouselItems = carouselItems;
     })
   }
 }

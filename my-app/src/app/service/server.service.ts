@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class HeroService {
+export class Server {
   readonly ROOT_URL = 'http://localhost:3000';
   readonly ITEMS_URL = 'http://localhost:3000/items';
 

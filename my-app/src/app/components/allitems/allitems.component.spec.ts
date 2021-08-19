@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AllitemsComponent } from './allitems.component';
 
 describe('AllitemsComponent', () => {

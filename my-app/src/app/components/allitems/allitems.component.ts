@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./allitems.component.scss']
 })
 export class AllitemsComponent implements OnInit {
-
+  title = "All items";
   constructor() { }
 
   ngOnInit(): void {
