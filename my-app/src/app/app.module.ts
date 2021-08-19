@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 
@@ -12,6 +13,7 @@ import { CarouselComponent } from './components/rendering/carousel/carousel.comp
 import { ThumbnailsComponent } from './components/rendering/thumbnails/thumbnails.component';
 import { AllitemsComponent } from './components/allitems/allitems.component';
 import { EditComponent } from './components/rendering/edit/edit.component';
+// import { TemplateFormsComponent } from './components/template-forms/template-forms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +25,13 @@ import { EditComponent } from './components/rendering/edit/edit.component';
     CreateComponent,
     AllitemsComponent,
     EditComponent
+    // TemplateFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

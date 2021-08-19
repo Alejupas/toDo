@@ -2,12 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 2%;
   background-color: white;
   padding: 20px;
   width: 40vw;
   margin-bottom: 50px;
   padding: 30px;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 50px;
 }
 
 .create-item-modal > input {
@@ -45,4 +50,12 @@
 .cancel-List-btn:hover {
   background-color: rgb(134, 134, 134);
   transition: 0.45s;
+}
+
+label {
+  font-size: 19px;
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: underline;
 }

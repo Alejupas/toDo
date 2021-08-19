@@ -23,7 +23,6 @@ export class HeroService {
   deleteItem(id:number){
     return this.http.delete((this.ITEMS_URL + `/${id}`), this.httpOptions).subscribe(()=> {
       console.log('delete successfull');
-      
     })
   }
   
@@ -31,8 +30,8 @@ export class HeroService {
     return this.http.get(this.ITEMS_URL + `/${id}`)
   }
 
-  // postItem(data: any): {
-  //   return this.http.post(this.ITEMS_URL, data)
-  //   .pipe(map)
-  // }
+  editItem(id:number, itemBody: any) {
+    return this.http.put<any>((this.ITEMS_URL + `/${id}`), itemBody).subscribe((data)=> {
+    })
+  }
 }

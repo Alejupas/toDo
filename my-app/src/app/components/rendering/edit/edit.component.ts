@@ -1,31 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeroService } from 'src/app/service/hero.service';
-
+import { ItemModel } from 'src/app/service/heroModel';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.scss']
 })
 export class EditComponent implements OnInit {
-item: any;
+// item: any;
 
-  constructor(private heroService:HeroService, private route:ActivatedRoute) { }
+@Input() item: any | undefined;
+
+
+constructor(private heroService:HeroService, private route:ActivatedRoute) { }
   
   ngOnInit(): void {
     this.getOneItem();
-  }
-
-  onDelete(id:number){
-    this.heroService.deleteItem(id);
   }
 
   getOneItem(){
     const id = +this.route.snapshot.paramMap.get("id")!;
     this.heroService.getItem(id).subscribe(item => {
       this.item = item;
-      console.log(item);
-      
     })
+  }
+
+  onDelete(id:number){
+    this.heroService.deleteItem(id);
+  }
+
+  onEdit(id:number){
+    console.log(this.item);
+    const editedItem = {id: this.item.id, title: this.item.title, text: this.item.text, price: this.item.price, img: this.item.img}
+    this.heroService.editItem(id, editedItem);
   }
 }
