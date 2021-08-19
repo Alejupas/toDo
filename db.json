@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "id": 1,
-      "title": "RayBen in style",
-      "text": "New RayBen sunglasses are so much stylish and fun!",
-      "img": "https://cdn.shopify.com/s/files/1/0490/9324/7140/products/Bondi_1303935_1200x.jpg?v=1602673214",
-      "price": "10.99"
-    },
-    {
       "id": 2,
       "title": "New Naik collection",
       "text": "They were sold out in few days! But we have some spare left.",
@@ -16,9 +9,9 @@
     },
     {
       "id": 3,
-      "title": "UK mainland divisionaswww",
-      "text": "7Eleven",
-      "price": "7.11",
+      "title": "Betkas",
+      "text": "7Elevenas",
+      "price": 2.21,
       "img": "http://familywealthadvisory.com/wordpress/wp-content/uploads/2017/10/Plane-200x200.png"
     },
     {
@@ -30,7 +23,7 @@
     },
     {
       "id": 6,
-      "title": "UK mainland division",
+      "title": "UK mainland divisionas",
       "text": "7Eleven",
       "price": "7.11",
       "img": "http://familywealthadvisory.com/wordpress/wp-content/uploads/2017/10/Plane-200x200.png"

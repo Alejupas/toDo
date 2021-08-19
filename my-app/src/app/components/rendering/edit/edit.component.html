@@ -14,7 +14,7 @@
     type="text"
     class="text-input"
     maxlength="60"
-    value="{{ item.text }}"
+    [(ngModel)]="item.text"
   />
   <label for="img"> Item Picture </label>
   <input id="img" type="text" class="photoUrl-input" value="{{ item.img }}" />
@@ -23,7 +23,7 @@
     id="price"
     type="number"
     class="price-input"
-    value="{{ item.price }}"
+    [(ngModel)]="item.price"
   />
 
   <div class="editNavigation">
@@ -34,4 +34,4 @@
     <a routerLink="/" class="cancel">Cancel</a>
   </div>
 </div>
-<pre><p>{{item | json}}</p></pre>
+<!-- <pre><p>{{item | json}}</p></pre> -->

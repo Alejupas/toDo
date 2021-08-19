@@ -6,7 +6,7 @@
       </a>
       <h3 class="item-title">{{ item.title }}</h3>
       <p class="item-text">{{ item.text }}</p>
-      <p class="price">{{ item.price }}</p>
+      <p class="price">${{ item.price }}</p>
       <div class="item-buttons">
         <!-- Routing goes here -->
         <a class="edit" id="{{ item.id }}" routerLink="/edit/{{ item.id }}"

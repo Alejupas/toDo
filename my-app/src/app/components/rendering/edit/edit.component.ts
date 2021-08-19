@@ -1,15 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeroService } from 'src/app/service/hero.service';
-import { ItemModel } from 'src/app/service/heroModel';
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.scss']
 })
 export class EditComponent implements OnInit {
-// item: any;
-
 @Input() item: any | undefined;
 
 
