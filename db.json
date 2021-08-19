@@ -27,6 +27,13 @@
       "text": "7Eleven",
       "price": "7.11",
       "img": "http://familywealthadvisory.com/wordpress/wp-content/uploads/2017/10/Plane-200x200.png"
+    },
+    {
+      "title": "Obuoliai 1kg",
+      "text": "Skanus lietuviski obuoliai is Jono Kazimiero ukio Silaleje",
+      "img": "http://www.flinchbaughsorchard.com/wp-content/uploads/2014/02/pink-lady-apple.jpg",
+      "price": 1.89,
+      "id": 7
     }
   ],
   "carouselItems": [

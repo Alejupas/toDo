@@ -9,6 +9,7 @@ export class HeroService {
   readonly ITEMS_URL = 'http://localhost:3000/items';
 
   httpOptions={headers: new HttpHeaders({ 'Content-Type': 'application/json' })}
+  itemBody: any | undefined;
 
   constructor(private http: HttpClient){}
 
@@ -22,7 +23,6 @@ export class HeroService {
 
   deleteItem(id:number){
     return this.http.delete((this.ITEMS_URL + `/${id}`), this.httpOptions).subscribe(()=> {
-      console.log('delete successfull');
     })
   }
   
@@ -32,6 +32,12 @@ export class HeroService {
 
   editItem(id:number, itemBody: any) {
     return this.http.put<any>((this.ITEMS_URL + `/${id}`), itemBody).subscribe((data)=> {
+    })
+  }
+
+  postItem(itemBody: Object) {
+    return this.http.post<any>((this.ITEMS_URL), itemBody, this.httpOptions).subscribe((data) => {
+      console.log(itemBody);
     })
   }
 }

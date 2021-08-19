@@ -1,5 +1,5 @@
 <h1>Create an Item</h1>
-<div class="create-item-modal">
+<div class="create-item-modal" (ngSubmit)="sendData()">
   <label for="title"> Item Title </label>
   <input
     id="title"
@@ -7,6 +7,7 @@
     class="title-input"
     maxlength="60"
     placeholder="Enter the name of an item"
+    [(ngModel)]="title"
   />
   <label for="text"> Item Description </label>
   <input
@@ -15,6 +16,7 @@
     class="text-input"
     maxlength="60"
     placeholder="Enter description"
+    [(ngModel)]="text"
   />
   <label for="img"> Item Picture </label>
   <input
@@ -22,6 +24,7 @@
     type="text"
     class="photoUrl-input"
     placeholder="Enter photo url"
+    [(ngModel)]="img"
   />
   <label for="price"> Item Price </label>
   <input
@@ -29,11 +32,11 @@
     type="number"
     class="price-input"
     placeholder="Set the price"
+    [(ngModel)]="price"
   />
 
   <div class="create-navigation">
-    <a routerLink="/" class="save">Save</a>
+    <a routerLink="/" class="save" (click)="sendData()">Save</a>
     <a routerLink="/" class="cancel">Cancel</a>
   </div>
 </div>
-<!-- <pre><p>{{item | json}}</p></pre> -->

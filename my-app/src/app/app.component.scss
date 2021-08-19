@@ -1,24 +1,28 @@
-// app.component.scss/ icons, font..
 Nav > a {
   display: flex;
   margin-top: 20px;
   text-decoration: none;
-  border: 1px solid var(--primaryColor);
   box-shadow: 2px 3px 2px grey;
   background-color: var(--primaryColor);
   border-radius: 15px;
   padding: 10px 30px;
-  color: white;
+  color: rgb(100, 100, 100);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
 
 Nav {
-  max-width: 50vw;
+  max-width: 45vw;
+  margin-top: 100px;
 }
 
 Nav > a:hover {
-  background-color: white;
-  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  color: white;
   transition: 0.45s;
+}
+
+Nav > a:focus {
+  background-color: var(--secondaryColor);
+  color: white;
 }
