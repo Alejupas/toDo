@@ -37,7 +37,6 @@ export class HeroService {
 
   postItem(itemBody: Object) {
     return this.http.post<any>((this.ITEMS_URL), itemBody, this.httpOptions).subscribe((data) => {
-      console.log(itemBody);
     })
   }
 }

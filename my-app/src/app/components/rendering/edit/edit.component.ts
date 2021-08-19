@@ -28,7 +28,6 @@ constructor(private heroService:HeroService, private route:ActivatedRoute) { }
   }
 
   onEdit(id:number){
-    console.log(this.item);
     const editedItem = {id: this.item.id, title: this.item.title, text: this.item.text, price: this.item.price, img: this.item.img}
     this.heroService.editItem(id, editedItem);
   }
