@@ -21,4 +21,10 @@ describe('AllitemsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have a title 'All items'`, () => {
+    fixture = TestBed.createComponent(AllitemsComponent);
+    component = fixture.debugElement.componentInstance;
+    expect(component.title).toEqual('All items');
+  })
 });
