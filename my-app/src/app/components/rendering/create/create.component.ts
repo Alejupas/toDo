@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { Server } from 'src/app/service/server.service';
+import { Server } from 'src/app/service/server.service'
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',

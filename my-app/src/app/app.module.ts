@@ -13,6 +13,7 @@ import { CarouselComponent } from './components/rendering/carousel/carousel.comp
 import { ThumbnailsComponent } from './components/rendering/thumbnails/thumbnails.component';
 import { AllitemsComponent } from './components/allitems/allitems.component';
 import { EditComponent } from './components/rendering/edit/edit.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { EditComponent } from './components/rendering/edit/edit.component';
     ThumbnailsComponent,
     CreateComponent,
     AllitemsComponent,
-    EditComponent
+    EditComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
