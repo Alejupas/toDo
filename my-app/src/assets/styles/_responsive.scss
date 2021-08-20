@@ -84,6 +84,22 @@
     min-width: 50vw;
     margin: 0 auto;
   }
+
+  .login-container {
+    width: 70vw !important;
+  }
+
+  .login-container > h1 {
+    font-size: 25px;
+  }
+
+  .input-container > input {
+    width: 70vw;
+  }
+
+  .login-container > .input-container > .login-button {
+    margin-top: 35px;
+  }
 }
 
 /* TABLET */
