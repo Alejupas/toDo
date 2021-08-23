@@ -42,6 +42,7 @@ h1 {
 .login-button:hover {
   background-color: orange;
   transform: scale(1.05);
+  transition: 0.5s;
   cursor: pointer;
 }
 

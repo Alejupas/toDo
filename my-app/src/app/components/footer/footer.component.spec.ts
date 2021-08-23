@@ -22,4 +22,14 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should return 4 lefty a tags', ()=> {
+    const footerLinks = document.querySelectorAll('.footer-col .lefty a');
+  expect(footerLinks.length).toBe(4);
+})
+
+  it('should return 4 righty a tags', ()=> {
+    const footerLinks = document.querySelectorAll('.footer-col .righty a');
+  expect(footerLinks.length).toBe(4);
+})
 });
