@@ -21,7 +21,7 @@ describe('PostService', () => {
     httpMock = TestBed.get(HttpTestingController);
   });
 
-  it(`should fetch Carousel posts`, (inject([HttpTestingController, Server],
+  it(`should fetch Carousel posts with length to be 3`, (inject([HttpTestingController, Server],
     (httpClient: HttpTestingController, postService: Server) => {
 
       const postItem = [
