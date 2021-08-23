@@ -19,7 +19,11 @@ describe('MainComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('title should be \'Welcome to the shop!\'', () => {
+    expect(component.welcomeMsg).toBe('Welcome to the shop!');
   });
 });
