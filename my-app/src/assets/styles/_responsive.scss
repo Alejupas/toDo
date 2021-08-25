@@ -36,10 +36,13 @@
   }
 
   aside > .thumbnails {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 90%;
   }
 
-  aside > .thumbnails > .aside > a > img {
+  .aside > a > img {
     height: 85px;
     width: 85px;
   }
@@ -58,17 +61,28 @@
     margin-top: 40px;
   }
 
-  #modal > .create-item-modal {
-    width: 60vw;
+  .create-item-modal {
+    width: 80vw;
+  }
+
+  .create-item-buttons {
+    text-align: center;
+  }
+
+  .create-item-buttons > .add-toList-btn {
+    margin-bottom: 10px;
   }
 
   .create-item-buttons > button {
     font-size: 14px;
     padding: 10px 20px;
+    min-width: 50vw;
   }
 
   .create-item-modal > input {
     padding: 7px;
+    min-width: 50vw;
+    margin: 0 auto;
   }
 }
 
@@ -122,8 +136,11 @@
     width: 85px;
   }
 
-  aside > .thumbnails > .aside {
-    min-width: 45%;
+  aside > .thumbnails {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 50%;
   }
 
   h2 {
@@ -131,12 +148,21 @@
     margin-top: 90px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 60vw;
+  }
+
+  .create-item-buttons {
+    text-align: center;
   }
 
   .create-item-buttons > button {
     font-size: 16px;
+    min-width: 60%;
+  }
+
+  .create-item-buttons > .add-toList-btn {
+    margin-bottom: 20px;
   }
 }
 
@@ -190,7 +216,7 @@
     margin-top: 110px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 60vw;
   }
 
@@ -199,8 +225,11 @@
     margin-right: 10px;
   }
 
-  aside > .thumbnails > .aside {
-    min-width: 28%;
+  aside > .thumbnails {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 50%;
   }
 }
 
@@ -244,7 +273,7 @@
     margin-top: 150px;
   }
 
-  #modal > .create-item-modal {
+  .create-item-modal {
     width: 30vw;
   }
 
@@ -253,10 +282,10 @@
     margin-right: 10px;
   }
 
-  /* aside > .thumbnails {
+  aside > .thumbnails {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    flex-basis: 80%;
-  } */
+    flex-basis: 30%;
+  }
 }
