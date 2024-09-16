@@ -1,106 +1,54 @@
 @import url("./css/responsive.css");
-@import url('./css/carousel.css');
+@import url("./css/carousel.css");
+@import url("./css/modal.css");
+@import url("./css/editDelteItem.css");
+@import url("./css/navigation.css");
+@import url("./css/aside.css");
+@import url("./css/footer.css");
+@import url("./css/addItemBtn.css");
+@import url("./css/mainTag.css");
 
 * {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.logo {
-    height: 70px;
-    float: left;
+#logo > .logo {
+  height: 50px;
+  margin-top: 15px;
 }
 
 :root {
-    --primaryColor: #FFB740;
-    --secondaryColor: #DF711B;
-    --thirdColor: #64C9CF;
+  --primaryColor: #ffb740;
+  --secondaryColor: #df711b;
+  --thirdColor: #64c9cf;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 2rem;
+  --spacer-5: 5rem;
 }
 
-/* NAVIGATION */
-.nav-buttons{
-    float: right;
-}
-
-nav { 
-    line-height: 78px;
-    background-color: var(--primaryColor);
-    height: 80px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.login-button, .search-input  {
-    padding: 12px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 1px 2px 4px var(--secondaryColor);
-    font-size: 19px;
-    outline:none;
-    cursor: pointer;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-
-.login-button:hover {
-    background-color: var(--secondaryColor);
-    color: white;
-}
-
-/* MAIN MENU */
-
-main > h1 {
-    font-size: 22px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* FOOTER */
-footer{
-    background-color: #241306;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    width: 100 vw;
-}
-
-.footer-col > h4, p{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.footer-col > ul > li > a {
-    text-decoration: none;
-    color: white;
-    text-align: left;
-}
-
-.footer-col > ul > li {
-    list-style-type: none;
-}
-
-
-.footer-col > p {
-    width: 300px;
-    padding: 1px;
-}
-
-.footer-col > h4 {
-    padding-bottom: 5px;
-    padding-top: 20px;
+.display-none {
+  display: none;
 }

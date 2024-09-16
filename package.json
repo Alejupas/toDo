@@ -1,0 +1,26 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "http-server": "^0.12.3",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejupas/toDo.git"
+  },
+  "author": "M.K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejupas/toDo/issues"
+  },
+  "homepage": "https://github.com/Alejupas/toDo#readme"
+}

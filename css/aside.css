@@ -1,0 +1,47 @@
+/* ASIDE */
+aside {
+  width: 100%;
+}
+
+aside > .thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnails > .aside > a > img {
+  display: block;
+}
+
+.thumbnails > .aside > h3,
+.item-title,
+.item-text {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.thumbnails > .aside {
+  width: 28vw;
+  margin-bottom: 50px;
+}
+
+.thumbnail {
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px rgb(199, 199, 199);
+}
+
+.thumbnail:hover {
+  transform: scale(1.04);
+  transition: 0.4s;
+}
+
+.thumbnails > .aside > .price {
+  color: rgb(6, 141, 6);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
